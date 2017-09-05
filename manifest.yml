@@ -1,11 +1,8 @@
 ---
-declared-services: 
-  sample-nodejs-cloudant-cloudantNoSQLDB:
-    label: cloudantNoSQLDB 
-    plan: Lite 
 applications:
-- name: sample-nodejs-cloudant
-  random-route: true
-  memory: 192M
+- name: Hackday-2017
+  memory: 512M
+  host: hackday-2017
+  domain: eu-de.mybluemix.net
   services:
-  - sample-nodejs-cloudant-cloudantNoSQLDB
+  - hackday-db
